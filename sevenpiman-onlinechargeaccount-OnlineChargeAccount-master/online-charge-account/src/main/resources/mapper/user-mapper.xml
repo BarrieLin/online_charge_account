@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.younantuiqun.onlinechargeaccount.dao.OcaUserDao">
+    <select id="selectUserById" resultType="com.younantuiqun.onlinechargeaccount.po.OcaUser">
+        select user_id, password, nickname, photo, email, phone, sex from oca_user
+        where user_id = #{userId}
+    </select>
+
+    <update id="changeUserInfo">
+        update oca_user
+        set
+        nickname = #{nickname},
+        email = #{email},
+        phone = #{phone},
+        sex = #{sex}
+        where
+        (user_id = #{userId});
+    </update>
+</mapper>

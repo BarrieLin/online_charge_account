@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.younantuiqun.onlinechargeaccount.dao.BillDao">
+    <insert id="addNewBill">
+        insert into oca_bill(bill_id, user_id, pay_money, time, check_type, remark, check_status)
+        values(
+            #{billId}, #{userId}, #{payMoney}, #{time}, #{checkType}, #{remark}, #{checkStatus}
+        )
+    </insert>
+    <update id="changeBill">
+        update oca_bill
+        set
+        pay_money = #{payMoney},
+        time = #{time},
+        check_type = #{checkType},
+        remark = #{remark},
+        check_status = #{checkStatus}
+        where
+        (bill_id = #{billId});
+    </update>
+    <delete id="deleteBillById">
+        delete from oca_bill
+        where bill_id = #{billId}
+    </delete>
+    <select id="selectBillById" resultType="com.younantuiqun.onlinechargeaccount.po.Bill">
+        select bill_id, user_id, pay_money, time, check_type, remark, check_status
+        from oca_bill
+        where bill_id = #{billId}
+    </select>
+
+    <select id="selectAllBillsByUserId" resultType="com.younantuiqun.onlinechargeaccount.po.Bill">
+        select bill_id, user_id, pay_money, time, check_type, remark, check_status
+        from oca_bill
+        where bill_id = #{userId}
+    </select>
+
+    <select id="selectBillsByYear" resultType="com.younantuiqun.onli    nechargeaccount.po.Bill">
+        select bill_id, user_id, pay_money, time, check_type, remark, check_status
+        from oca_bill
+        where YEAR(time) = #{year} and user_id = #{userId}
+    </select>
+
+    <select id="selectBillsByYearAndMonth" resultType="com.younantuiqun.onlinechargeaccount.po.Bill">
+        select bill_id, user_id, pay_money, time, check_type, remark, check_status
+        from oca_bill
+        where YEAR(time) = #{year} and MONTH(time) = #{month} and user_id = #{userId}
+    </select>
+
+    <select id="selectBillsByYearMonthDay" resultType="com.younantuiqun.onlinechargeaccount.po.Bill">
+        select bill_id, user_id, pay_money, time, check_type, remark, check_status
+        from oca_bill
+        where date_format(time,'%Y-%m-%d')=date_format(#{time},'%Y-%m-%d');
+    </select>
+
+    <!--2021/5/29增加 by工头-->
+    <select id="selectSumMonthBillsByType" resultType="java.lang.Float">
+        select sum(pay_money)
+        from oca_bill
+        where user_id = #{userId} and check_type = #{checkType} and date_format(time,'%Y-%m')=date_format(CURDATE( ),'%Y-%m')
+    </select>
+
+    <select id="selectSumBillsByStatus" resultType="java.lang.Float">
+        select sum(pay_money)
+        from oca_bill
+        where user_id = #{userId} and check_status = #{checkStatus}
+    </select>
+
+
+    <resultMap id="MonSumOIncomeMap" type="com.younantuiqun.onlinechargeaccount.po.MonSumOIncome" >
+        <result column="sumMoney" property="outOrIncome" jdbcType="FLOAT" />
+        <result column="month" property="date" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="selectCurrYearBillsByUserId" resultMap="MonSumOIncomeMap">
+        select SUM(pay_money) as sumMoney,date_format(time,'%Y-%m') as month
+        from oca_bill
+        where date_format(time,'%Y') = date_format(CURDATE(),'%Y') and check_status = #{checkStatus} and user_id = #{userId}
+        group by month;
+    </select>
+    <!--2021/5/29增加 by工头-->
+    <!--2021/6/16增加 by工头-->
+    <select id="selectSumMonthBillsByTypeAndTime" resultType="java.lang.Float">
+        select sum(pay_money)
+        from oca_bill
+        where user_id = #{userId} and check_status = #{checkStatus} and YEAR(time) = #{year} and MONTH(time) = #{month}
+    </select>
+    <!--2021/6/16增加 by工头-->
+</mapper>

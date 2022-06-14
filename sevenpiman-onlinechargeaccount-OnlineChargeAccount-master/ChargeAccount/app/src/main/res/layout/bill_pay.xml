@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/nomoney"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pay_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#D7E5EB"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/dollar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额："
+                    android:textSize="20dp"
+                    android:textColor="#074646"
+                    />
+
+                <EditText
+                    android:id="@+id/number_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@null"
+                    android:hint="0.00"
+                    android:textColor="#353F3F"
+                    android:textColorHint="#626464"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/date"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日期："
+                    android:textSize="20dp"
+                    android:textColor="#074646"
+                    />
+                <TextView
+                    android:id="@+id/date_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="选择日期"
+                    android:textSize="20dp"
+                    android:textColorHint="#626464"
+                    android:textColor="#353F3F"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/type"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型："
+                    android:textSize="20dp"
+                    android:textColor="#074646"
+                    />
+
+                <TextView
+                    android:id="@+id/type_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="选择支出类型"
+                    android:textColor="#353F3F"
+                    android:textColorHint="#626464"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pay_cv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#D7E5EB"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/remarks"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注："
+                android:textSize="20dp"
+                android:textColor="#074646"
+                />
+            <EditText
+                android:id="@+id/remarks_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="#353F3F"
+                android:textColorHint="#626464"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_pay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_pay"
+        android:layout_below="@+id/pay_cv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="记账"
+        android:textSize="20sp"
+        android:textColor="#074646"
+
+        />
+
+
+
+</RelativeLayout>

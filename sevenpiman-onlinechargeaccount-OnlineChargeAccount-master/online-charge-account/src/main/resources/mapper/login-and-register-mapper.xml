@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.younantuiqun.onlinechargeaccount.dao.LoginAndRegisterDao">
+    <select id="findUserExistOrNotByUserId" resultType="java.lang.Integer">
+        select count(*) from oca_user
+        where user_id = #{userId}
+    </select>
+    <select id="getUserByUserId" resultType="com.younantuiqun.onlinechargeaccount.po.OcaUser">
+        select user_id, password, nickname, photo
+        from oca_user
+        where user_id = #{userId}
+    </select>
+
+    <insert id="addNewAccount">
+        insert into oca_user(user_id, password, nickname, photo)
+        values(
+            #{userId}, #{password},#{nickname},#{photo}
+        )
+    </insert>
+</mapper>

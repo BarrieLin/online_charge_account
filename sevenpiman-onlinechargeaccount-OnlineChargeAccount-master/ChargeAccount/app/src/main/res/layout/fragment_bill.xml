@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bill_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#50BBBB"
+        app:title="记账"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <!--顶部导航栏-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_bill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="3dp"
+        android:background="#DBF5F5"
+        style="@style/MyTabLayoutStyle"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed"
+        >
+    </com.google.android.material.tabs.TabLayout>
+</androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

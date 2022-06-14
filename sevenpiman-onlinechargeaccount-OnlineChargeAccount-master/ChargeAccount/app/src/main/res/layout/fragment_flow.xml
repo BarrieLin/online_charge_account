@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_image"
+            app:collapsedTitleGravity="left"
+            app:contentScrim="#50BBBB"
+            app:expandedTitleGravity="left|bottom"
+            app:expandedTitleMarginBottom="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/ToolBarTitleText"
+            app:collapsedTitleTextAppearance="@style/ToolBarTitleText"
+            app:titleEnabled="false">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="月收入"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+
+                    <TextView
+                        android:id="@+id/month_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="月支出"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+                    <TextView
+                        android:id="@+id/month_outcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="结余(元)"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+                    <TextView
+                        android:id="@+id/month_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="20dp"
+                        android:textColor="#074646"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center_horizontal"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title="@null">
+                <LinearLayout
+                    android:id="@+id/top_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/top_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2021.05"
+                        android:textSize="18dp"
+                        android:textColor="#074646"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/date_bottom"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        />
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+                />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

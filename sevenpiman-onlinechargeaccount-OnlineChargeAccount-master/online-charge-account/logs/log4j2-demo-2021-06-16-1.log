@@ -1,0 +1,98 @@
+[2021-06-16 18:00:12,139][INFO][main][org.springframework.boot.StartupInfoLogger] Starting OnlineChargeAccountApplication using Java 1.8.0_221 on AKIDARON with PID 9852 (D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account\target\classes started by 秋长武大郎 in D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account)
+[2021-06-16 18:00:12,159][INFO][main][org.springframework.boot.SpringApplication] The following profiles are active: dev
+[2021-06-16 18:00:13,269][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2021-06-16 18:00:13,288][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+[2021-06-16 18:00:13,723][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-06-16 18:00:13,723][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:00:13,723][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting service [Tomcat]
+[2021-06-16 18:00:13,723][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2021-06-16 18:00:13,787][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing Spring embedded WebApplicationContext
+[2021-06-16 18:00:13,787][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1561 ms
+[2021-06-16 18:00:14,275][INFO][main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-16 18:00:14,400][WARN][main][org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-06-16 18:00:14,494][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-06-16 18:00:16,231][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-06-16 18:00:16,295][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:00:16,312][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-16 18:00:16,312][INFO][main][org.springframework.boot.StartupInfoLogger] Started OnlineChargeAccountApplication in 4.609 seconds (JVM running for 6.141)
+[2021-06-16 18:00:23,136][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] A cookie header was received [1608725050,1608725095,1608727810; Pycharm-f267b677=150cbebb-9cdd-425c-a49c-da349f63e001] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[2021-06-16 18:00:23,154][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-16 18:00:23,155][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Initializing Servlet 'dispatcherServlet'
+[2021-06-16 18:00:23,156][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Completed initialization in 1 ms
+[2021-06-16 18:04:10,893][INFO][main][org.springframework.boot.StartupInfoLogger] Starting OnlineChargeAccountApplication using Java 1.8.0_221 on AKIDARON with PID 984 (D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account\target\classes started by 秋长武大郎 in D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account)
+[2021-06-16 18:04:10,900][INFO][main][org.springframework.boot.SpringApplication] The following profiles are active: dev
+[2021-06-16 18:04:11,357][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2021-06-16 18:04:11,366][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+[2021-06-16 18:04:11,695][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-06-16 18:04:11,702][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:04:11,703][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting service [Tomcat]
+[2021-06-16 18:04:11,703][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2021-06-16 18:04:11,770][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing Spring embedded WebApplicationContext
+[2021-06-16 18:04:11,770][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 806 ms
+[2021-06-16 18:04:12,239][INFO][main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-16 18:04:12,337][WARN][main][org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-06-16 18:04:12,407][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-06-16 18:04:13,589][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-06-16 18:04:13,640][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:04:13,655][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-16 18:04:13,663][INFO][main][org.springframework.boot.StartupInfoLogger] Started OnlineChargeAccountApplication in 3.109 seconds (JVM running for 4.165)
+[2021-06-16 18:04:18,623][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] A cookie header was received [1608725050,1608725095,1608727810; Pycharm-f267b677=150cbebb-9cdd-425c-a49c-da349f63e001] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[2021-06-16 18:04:18,629][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-16 18:04:18,629][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Initializing Servlet 'dispatcherServlet'
+[2021-06-16 18:04:18,630][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Completed initialization in 1 ms
+[2021-06-16 18:11:40,753][INFO][main][org.springframework.boot.StartupInfoLogger] Starting OnlineChargeAccountApplication using Java 1.8.0_221 on AKIDARON with PID 7052 (D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account\target\classes started by 秋长武大郎 in D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account)
+[2021-06-16 18:11:40,768][INFO][main][org.springframework.boot.SpringApplication] The following profiles are active: dev
+[2021-06-16 18:11:41,244][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2021-06-16 18:11:41,249][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+[2021-06-16 18:11:41,578][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-06-16 18:11:41,594][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:11:41,594][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting service [Tomcat]
+[2021-06-16 18:11:41,594][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2021-06-16 18:11:41,664][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing Spring embedded WebApplicationContext
+[2021-06-16 18:11:41,664][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 833 ms
+[2021-06-16 18:11:42,064][INFO][main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-16 18:11:42,159][WARN][main][org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-06-16 18:11:42,254][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-06-16 18:11:43,700][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-06-16 18:11:43,748][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:11:43,764][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-16 18:11:43,774][INFO][main][org.springframework.boot.StartupInfoLogger] Started OnlineChargeAccountApplication in 3.343 seconds (JVM running for 4.387)
+[2021-06-16 18:21:22,948][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-16 18:21:22,949][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Initializing Servlet 'dispatcherServlet'
+[2021-06-16 18:21:22,957][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Completed initialization in 7 ms
+[2021-06-16 18:21:23,037][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5cbd94b2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,039][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@336213d9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,042][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@60b870a6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,046][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1270e6ad (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,047][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48ad7648 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,049][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@163e187c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,051][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70e1ae1a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,054][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f925d66 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,056][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23ac7303 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:21:23,059][WARN][http-nio-8080-exec-1][com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5db12f36 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[2021-06-16 18:32:40,438][INFO][http-nio-8080-exec-9][org.apache.juli.logging.DirectJDKLog] A cookie header was received [1608725050,1608725095,1608727810; Pycharm-f267b677=150cbebb-9cdd-425c-a49c-da349f63e001] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[2021-06-16 18:34:01,081][INFO][main][org.springframework.boot.StartupInfoLogger] Starting OnlineChargeAccountApplication using Java 1.8.0_221 on AKIDARON with PID 11584 (D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account\target\classes started by 秋长武大郎 in D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account)
+[2021-06-16 18:34:01,088][INFO][main][org.springframework.boot.SpringApplication] The following profiles are active: dev
+[2021-06-16 18:34:01,536][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2021-06-16 18:34:01,546][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+[2021-06-16 18:34:01,896][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-06-16 18:34:01,903][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:34:01,904][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting service [Tomcat]
+[2021-06-16 18:34:01,904][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2021-06-16 18:34:01,971][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing Spring embedded WebApplicationContext
+[2021-06-16 18:34:01,971][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 824 ms
+[2021-06-16 18:34:02,459][INFO][main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-16 18:34:02,559][WARN][main][org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-06-16 18:34:02,631][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-06-16 18:34:04,185][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-06-16 18:34:04,231][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-16 18:34:04,246][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-16 18:34:04,254][INFO][main][org.springframework.boot.StartupInfoLogger] Started OnlineChargeAccountApplication in 3.52 seconds (JVM running for 4.708)
+[2021-06-16 18:34:07,815][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] A cookie header was received [1608725050,1608725095,1608727810; Pycharm-f267b677=150cbebb-9cdd-425c-a49c-da349f63e001] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[2021-06-16 18:34:07,821][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-16 18:34:07,821][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Initializing Servlet 'dispatcherServlet'
+[2021-06-16 18:34:07,822][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Completed initialization in 1 ms

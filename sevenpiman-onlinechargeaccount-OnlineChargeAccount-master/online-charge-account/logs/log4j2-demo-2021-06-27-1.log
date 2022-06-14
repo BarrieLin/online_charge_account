@@ -1,0 +1,20 @@
+[2021-06-27 23:03:15,925][INFO][main][org.springframework.boot.StartupInfoLogger] Starting OnlineChargeAccountApplication using Java 1.8.0_221 on AKIDARON with PID 11908 (D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account\target\classes started by 秋长武大郎 in D:\dasan\project\realproject\OnlineChargeAccount\online-charge-account)
+[2021-06-27 23:03:15,938][INFO][main][org.springframework.boot.SpringApplication] The following profiles are active: dev
+[2021-06-27 23:03:16,700][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2021-06-27 23:03:16,710][INFO][main][org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+[2021-06-27 23:03:17,133][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-06-27 23:03:17,142][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-06-27 23:03:17,142][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting service [Tomcat]
+[2021-06-27 23:03:17,142][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2021-06-27 23:03:17,209][INFO][main][org.apache.juli.logging.DirectJDKLog] Initializing Spring embedded WebApplicationContext
+[2021-06-27 23:03:17,209][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1208 ms
+[2021-06-27 23:03:17,776][INFO][main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] Initializing ExecutorService 'applicationTaskExecutor'
+[2021-06-27 23:03:17,891][WARN][main][org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2021-06-27 23:03:17,980][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-06-27 23:03:19,886][INFO][main][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-06-27 23:03:19,964][INFO][main][org.apache.juli.logging.DirectJDKLog] Starting ProtocolHandler ["http-nio-8080"]
+[2021-06-27 23:03:19,980][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-06-27 23:03:19,987][INFO][main][org.springframework.boot.StartupInfoLogger] Started OnlineChargeAccountApplication in 4.395 seconds (JVM running for 5.87)
+[2021-06-27 23:14:53,734][INFO][http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-06-27 23:14:53,734][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Initializing Servlet 'dispatcherServlet'
+[2021-06-27 23:14:53,735][INFO][http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet] Completed initialization in 1 ms

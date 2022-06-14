@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.younantuiqun.onlinechargeaccount.dao.BudgetDao">
+    <insert id="addNewBudget">
+        insert into oca_budget(user_id, month_time, predict_money)
+        values(
+            #{userId}, #{monthTime}, #{predictMoney}}
+        )
+    </insert>
+    <update id="editBudget">
+        update oca_budget
+        set
+        user_id = #{userId},
+        month_time = #{monthTime},
+        predict_money = #{predictMoney},
+        where
+        (user_id = #{userId} and month_time = #{monthTime});
+    </update>
+    <select id="selectAllBudgetsByUserId">
+        select user_id, month_time, predict_money
+        from oca_budget
+        where user_id = #{userId}
+    </select>
+    <select id="selectBudgetByMonth" resultType="com.younantuiqun.onlinechargeaccount.po.Budget">
+        select user_id, month_time, predict_money
+        from oca_budget
+        where user_id = #{userId} and month_time=#{month}
+    </select>
+</mapper>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:item_wode="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bill_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#50BBBB"
+        app:title="个人中心"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_blur"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_blur"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="#8D8B8B"/>
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:textSize="17sp"
+                android:textColor="#E68A83"
+                android:text="昵称"/>
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:textColor="#E68A83"
+                android:layout_toRightOf="@id/user_line"
+                android:text="未设置"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/user_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.chargeaccount.utils.Item_wode
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            item_wode:show_bottomline="true"
+            item_wode:show_leftimg="@drawable/set"
+            item_wode:show_text="信息设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.chargeaccount.utils.Item_wode
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            item_wode:show_bottomline="true"
+            item_wode:show_leftimg="@drawable/guanyu"
+            item_wode:show_text="关于" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.chargeaccount.utils.Item_wode
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            item_wode:show_bottomline="false"
+            item_wode:show_leftimg="@drawable/banben"
+            item_wode:show_text="版本更新" />
+    </LinearLayout>
+
+</LinearLayout>
